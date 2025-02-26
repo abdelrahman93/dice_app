@@ -5,13 +5,6 @@ class CustomWidget extends StatelessWidget {
   CustomWidget({super.key, required this.colors});
   final List<Color> colors;
 
-  var activeDiceImage = "assets/images/dice-1.png";
-
-
-  void rollDice() {
-    print('change image');
-  }
-
   @override
   Widget build(BuildContext context) {
     return Container(
