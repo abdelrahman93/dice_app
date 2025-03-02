@@ -9,7 +9,7 @@ class CustomTextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: TextStyle(color: Colors.white, fontSize: 50),
+      style: TextStyle(color: Colors.white, fontSize: 20),
     );
   }
 }
