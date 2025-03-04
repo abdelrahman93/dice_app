@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CustomTextWidget extends StatelessWidget {
  const CustomTextWidget(this.text,{super.key});
@@ -9,7 +10,7 @@ class CustomTextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: TextStyle(color: Colors.white, fontSize: 20),
+      style: GoogleFonts.aBeeZee(color: Colors.white, fontSize: 30 ),
     );
   }
 }
