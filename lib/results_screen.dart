@@ -56,7 +56,9 @@ class _ResultsScreenState extends State<ResultsScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('You Answered $numCorrectQuestions out of $numTotalQuestions'),
+            Text(
+              style: TextStyle(fontWeight: FontWeight.bold, color: Color.fromARGB(255, 227, 173, 11),fontSize: 20),
+              'You Answered $numCorrectQuestions out of $numTotalQuestions'),
             SizedBox(height: 30),
             QuestionsSummary(summaryData),
             SizedBox(height: 30),

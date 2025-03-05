@@ -36,7 +36,7 @@ class _SummaryItemState extends State<SummaryItem> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Question : ${widget.itemData['question'] as String}",
+                "${widget.itemData['question'] as String}",
                 style: GoogleFonts.lato(
                   color: Colors.white,
                   fontSize: 16,
@@ -47,7 +47,7 @@ class _SummaryItemState extends State<SummaryItem> {
               Text(
                 "Answer : ${widget.itemData['user_answer'] as String}",
                 style: GoogleFonts.lato(
-                  color: const Color.fromARGB(255, 155, 154, 154),
+                  color: const Color.fromARGB(255, 4, 5, 106),
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
                 ),
@@ -55,7 +55,7 @@ class _SummaryItemState extends State<SummaryItem> {
               Text(
                 "Correct Answer : ${widget.itemData['correct_answer'] as String}",
                 style: GoogleFonts.lato(
-                  color: const Color.fromARGB(255, 77, 174, 105),
+                  color: const Color.fromARGB(255, 25, 153, 61),
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
                 ),

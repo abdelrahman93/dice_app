@@ -18,12 +18,6 @@ class _QuizState extends State<Quiz> {
 
   List<String> selectedAnswers = [];
 
-  // @override
-  // void initState() {
-  //   activeScreen = 'start-screen';
-  //   super.initState();
-  // }
-
   void switchScreen() {
     setState(() {
       activeScreen = 'question-screen';
@@ -34,7 +28,6 @@ class _QuizState extends State<Quiz> {
     selectedAnswers.add(answer);
     if (selectedAnswers.length == questions.length) {
       setState(() {
-       // selectedAnswers = [];
         activeScreen = 'results-screen';
       });
     }
@@ -43,7 +36,8 @@ class _QuizState extends State<Quiz> {
   void onRestart() {
     setState(() {
       selectedAnswers=[];
-      activeScreen = 'questions-screen';
+      activeScreen = 'start-screen';
+      questions.shuffle();
     });
   }
 
@@ -58,6 +52,8 @@ class _QuizState extends State<Quiz> {
      if (activeScreen == 'results-screen') {
       screenWideget = ResultsScreen(chosenAnswers: selectedAnswers,onRestart: onRestart,);
     }
+
+
 
     return MaterialApp(
       home: Scaffold(
